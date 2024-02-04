@@ -1,0 +1,57 @@
+body{
+    
+    background-image: url("https://cdn.discordapp.com/attachments/1203590586175852544/1203590992524083231/Comp_1_0-00-26-02.png?ex=65d1a676&is=65bf3176&hm=2c5b8db5604ac63aa9e39d30e3969b498e721384b3d7b7dcbced59679de5e665&");
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: cover; /* makes it so the image resizes dynamically*/
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.content-wrapper {
+    position: relative; /* This context is used by the content itself */
+    width: 94%; /* Adjust the width as needed */
+    max-width: 1000px; /* Or any maximum width you prefer */
+    margin: 0 auto; /* Center the wrapper */
+    background: white; /* Solid white background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensures content is above the pseudo-elements */
+    padding: 20px; /* Add padding inside the white container */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3%;
+    right: 3%;
+    bottom: 70%; /* Adjust this to where the black line is on the page */
+    background-image: url("https://wallpapers.com/images/hd/dark-wireframe-abstract-art-dxgtffshsquqz9n5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; /* Positions this layer below the content of the body */
+
+    
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: -300px; /* Adjust this value to position your logo */
+    left: 50%; /* Center the logo. Adjust if needed */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+    width: 1000px; /* Your logo width */
+    height: 1000px; /* Your logo height */
+    background-image: url("https://cdn.discordapp.com/attachments/1203455891622465627/1203547688097021992/Comp_1_0-00-24-03.png?ex=65d17e21&is=65bf0921&hm=32b01b1ca71f98acea8d562a62eab682f4bf89e4b43fb82a2cee092ec50bcc8e&");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 10; /* Ensures the logo is above all other content */
+}
