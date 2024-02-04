@@ -8,15 +8,15 @@
     <title>My E-Commerce Store</title>
     <style>
       img {
-        width: 200px;
+        max-width: 100%;
+        height: auto;
         border-radius: 10px;
       }
       .moto {
         font-weight: bold;
-      }
-      em{
-        color:red;
-        font-size: normal;
+        position: fixed;
+        right: 84%;
+        top: 5%;
       }
       .navbar {
             background-color: #333;
@@ -35,33 +35,43 @@
             background-color: #ddd;
             color: black;
         }
+      .top_products{
+        position: fixed;
+        right:40%;
+        top:90%;
+      }
     </style>
   </head>
   <body>
     <div class="navbar">
       <a href="/index.html">Home</a>
-      <a href="#">Products</a>
+      <a href="/products.html">Products</a>
       <a href="/contact.html">Contact</a>
-      <a href="#">Cart</a>
+      <a href="/about.html">About</a>
     </div>
-    <img src="images/logo_2.png" style="position:fixed;width: 400px;right: 1200px;"alt="ERROR" />
-    <p class="moto">we <em>DO NOT</em> steal credit card information</p>
+    <img src="images/image.png" style="position:fixed;width: 20%;right: 41%;top: 8%"alt="ERROR" />
+    <p class="moto">Building schools one GPU at a time</p>
+    <h1 class="top_products">
+        Checkout our top products!
+    </h1>
 
     
     <a href="product.html?image=product1">
-      <img src="images/Png.png" style="position:fixed; top:300px;right:900px;
-      width:500px;border: 2px solid black; border-radius: 5px;" alt="Product1"/>
+      <img src="images/Png.png" style="position:fixed; top:35%;right:60%;
+      width:30%;border: 2px solid black; border-radius: 5px;" alt="Product1"/>
     </a>
-
-
 
     <a href="product.html?image=product2">
-      <img src="images/61sA2GpCMZL.jpg" style="position:fixed; top:300px;right:200px;
-      width:500px;border: 2px solid black; border-radius: 5px;" alt="Product2"/>
+      <img src="images/61sA2GpCMZL.jpg" style="position:fixed; top:35%;right:11%;
+      width:30%;border: 2px solid black; border-radius: 5px;" alt="Product2"/>
     </a>
 
 
-    <img src ="images/icone-trait-noir.png" style="position: fixed; top: 150px;width: 1500px; height: 200px;" alt="ERROR"/>
+    <img src ="images/icone-trait-noir.png" style="position: fixed; top: 20%;width: 98%; height: 20%;" alt="ERROR"/>
+
+    
+
+
 
   </body>
 </html>
